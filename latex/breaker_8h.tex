@@ -1,0 +1,61 @@
+\doxysection{src/breaker.h File Reference}
+\hypertarget{breaker_8h}{}\label{breaker_8h}\index{src/breaker.h@{src/breaker.h}}
+{\ttfamily \#include "{}utility.\+h"{}}\newline
+Include dependency graph for breaker.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{breaker_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{breaker_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{breaker_8h_aebe7721407b858951fa84fd70b9cb9b7}{break\+File}} (const std\+::string \&target\+File, const std\+::string \&output\+File)
+\begin{DoxyCompactList}\small\item\em Attempts to break the encryption of a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{breaker_8h_aebe7721407b858951fa84fd70b9cb9b7}\label{breaker_8h_aebe7721407b858951fa84fd70b9cb9b7} 
+\index{breaker.h@{breaker.h}!breakFile@{breakFile}}
+\index{breakFile@{breakFile}!breaker.h@{breaker.h}}
+\doxysubsubsection{\texorpdfstring{breakFile()}{breakFile()}}
+{\footnotesize\ttfamily int break\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{target\+File,  }\item[{const std\+::string \&}]{output\+File }\end{DoxyParamCaption})}
+
+
+
+Attempts to break the encryption of a file. 
+
+This function analyzes the target file and attempts to break its encryption, saving the results to the specified output file. The exact breaking method depends on the implementation in the source file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+File} & The path to the file to analyze and attempt to break. \\
+\hline
+{\em output\+File} & The path where the results will be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 on success, or a non-\/zero error code on failure.
+\end{DoxyReturn}
+Attempts to break the encryption of a file.
+
+This function analyzes the encrypted file, determines the likely key length, derives the encryption key, and decrypts the file. The result is saved to the output file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+File} & The path to the encrypted file to be analyzed and decrypted. \\
+\hline
+{\em output\+File} & The path to the file where decrypted content will be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 on success, or a non-\/zero error code on failure. 
+\end{DoxyReturn}

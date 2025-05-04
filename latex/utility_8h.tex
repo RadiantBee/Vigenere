@@ -1,0 +1,493 @@
+\doxysection{src/utility.h File Reference}
+\hypertarget{utility_8h}{}\label{utility_8h}\index{src/utility.h@{src/utility.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+Include dependency graph for utility.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utility_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{utility_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{utility_8h_ac376f606ef64c0c1896b6eacb11cfe71}{get\+Index\+Of\+Coincidence}} (long long unsigned int \texorpdfstring{$\ast$}{*}frequency\+Table)
+\begin{DoxyCompactList}\small\item\em Computes the Index of Coincidence for a frequency table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utility_8h_a11129470a1774aecc4b783563c25f07e}{decrypt}} (std\+::string \&input\+Data, const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Decrypts input data using the given key. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{utility_8h_ac5a34f321f111931b3738f08364a4543}{get\+Caesar\+Key}} (std\+::string \&input\+Data, long long unsigned int \texorpdfstring{$\ast$}{*}frequency\+Table)
+\begin{DoxyCompactList}\small\item\em Determines the Caesar cipher key from input data. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utility_8h_a327339b2aa7f30a9402401399dcb9683}{fill\+Raw\+Text}} (const std\+::string \&filename, std\+::string \&raw\+Text)
+\begin{DoxyCompactList}\small\item\em Reads raw text from a file into a string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utility_8h_af77f2c781e7d5922ddf127482f5814c7}{fill\+Frequency\+Table\+From\+Text}} (const std\+::string \&raw\+Text, long long unsigned int \texorpdfstring{$\ast$}{*}frequency\+Table)
+\begin{DoxyCompactList}\small\item\em Populates a frequency table from the given text. \end{DoxyCompactList}\item 
+long long unsigned int \mbox{\hyperlink{utility_8h_adb62f9ff0257f2a21ad59bdbad6e23e6}{get\+Key\+Length}} (const std\+::string \&raw\+Text)
+\begin{DoxyCompactList}\small\item\em Determines the key length of the given text. \end{DoxyCompactList}\item 
+long long int \mbox{\hyperlink{utility_8h_a3c2249598165157f40a56383a66abb2b}{next\+Valid\+Key\+Index}} (const std\+::string \&key, long long int current\+Index)
+\begin{DoxyCompactList}\small\item\em Finds the next valid key index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{utility_8h_a3617b50fc3d71d891b8ea7028e570745}{save\+To\+File}} (const std\+::string \&filename, const std\+::string \&data)
+\begin{DoxyCompactList}\small\item\em Saves data to a file with a chosen separator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utility_8h_a0feaae993e2bdf92291dd7fa2fdc5b60}{string\+To\+Lowercase}} (std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Converts every character of a string to its lowercase version. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{utility_8h_a1fe65325de8473209a13f97c2e2816d9}{get\+Text\+Data\+From\+File}} (const std\+::string \&filename, std\+::string \&text\+Data)
+\begin{DoxyCompactList}\small\item\em Reads text data from a file. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{utility_8h_a49ea566d59b876f9e18054573171970b}{get\+Key\+Data\+From\+File}} (const std\+::string \&filename, std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Reads key data from a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{utility_8h_a0d20b69b0ad703df78459e1033d5c1d4}{print\+Help}} ()
+\begin{DoxyCompactList}\small\item\em Prints help information to the console. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{utility_8h_a5210c3c5fc0ef89e29ec9fcce68bffbf}{parce\+Arguments}} (int argc, char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}argv, std\+::string \&mode, std\+::string \&input\+File, std\+::string \&output\+File, std\+::string \&key\+File)
+\begin{DoxyCompactList}\small\item\em Parses command-\/line arguments and extracts required values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{utility_8h_a2bbada702a61e8f8232f3dbbef4ddd55}{ASCII\+\_\+\+TEXT\+\_\+\+MARGIN}} = 97
+\begin{DoxyCompactList}\small\item\em ASCII margin value for text processing. \end{DoxyCompactList}\item 
+const double \mbox{\hyperlink{utility_8h_a5df74acee9a0a1404825ed702c5559a6}{FREQUENCY\+\_\+\+TABLE}} \mbox{[}$\,$\mbox{]}
+\begin{DoxyCompactList}\small\item\em Percent frequency of every letter in English text. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{utility_8h_a11129470a1774aecc4b783563c25f07e}\label{utility_8h_a11129470a1774aecc4b783563c25f07e} 
+\index{utility.h@{utility.h}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily void decrypt (\begin{DoxyParamCaption}\item[{std\+::string \&}]{input\+Data,  }\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Decrypts input data using the given key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Data} & The data to be decrypted. \\
+\hline
+{\em key} & The decryption key.\\
+\hline
+\end{DoxyParams}
+Decrypts input data using the given key.
+
+This function decrypts the input data using the provided key and modifies the data in place.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Data} & The encrypted text to decrypt. \\
+\hline
+{\em key} & The Vigenère cipher key. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{utility_8h_af77f2c781e7d5922ddf127482f5814c7}\label{utility_8h_af77f2c781e7d5922ddf127482f5814c7} 
+\index{utility.h@{utility.h}!fillFrequencyTableFromText@{fillFrequencyTableFromText}}
+\index{fillFrequencyTableFromText@{fillFrequencyTableFromText}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{fillFrequencyTableFromText()}{fillFrequencyTableFromText()}}
+{\footnotesize\ttfamily void fill\+Frequency\+Table\+From\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{raw\+Text,  }\item[{long long unsigned int \texorpdfstring{$\ast$}{*}}]{frequency\+Table }\end{DoxyParamCaption})}
+
+
+
+Populates a frequency table from the given text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Text} & The text to analyze. \\
+\hline
+{\em frequency\+Table} & The frequency table to populate.\\
+\hline
+\end{DoxyParams}
+Populates a frequency table from the given text.
+
+This function updates the provided frequency table based on the occurrence of each letter in the raw text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Text} & The input text to analyze. \\
+\hline
+{\em frequency\+Table} & An array to store the frequency of each letter. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{utility_8h_a327339b2aa7f30a9402401399dcb9683}\label{utility_8h_a327339b2aa7f30a9402401399dcb9683} 
+\index{utility.h@{utility.h}!fillRawText@{fillRawText}}
+\index{fillRawText@{fillRawText}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{fillRawText()}{fillRawText()}}
+{\footnotesize\ttfamily void fill\+Raw\+Text (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{std\+::string \&}]{raw\+Text }\end{DoxyParamCaption})}
+
+
+
+Reads raw text from a file into a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to read. \\
+\hline
+{\em raw\+Text} & The string to store the raw text.\\
+\hline
+\end{DoxyParams}
+Reads raw text from a file into a string.
+
+This function reads a file, filters out non-\/alphabetical characters, and converts uppercase characters to lowercase.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to process. \\
+\hline
+{\em raw\+Text} & The string where the raw text will be stored. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{utility_8h_ac5a34f321f111931b3738f08364a4543}\label{utility_8h_ac5a34f321f111931b3738f08364a4543} 
+\index{utility.h@{utility.h}!getCaesarKey@{getCaesarKey}}
+\index{getCaesarKey@{getCaesarKey}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{getCaesarKey()}{getCaesarKey()}}
+{\footnotesize\ttfamily char get\+Caesar\+Key (\begin{DoxyParamCaption}\item[{std\+::string \&}]{input\+Data,  }\item[{long long unsigned int \texorpdfstring{$\ast$}{*}}]{frequency\+Table }\end{DoxyParamCaption})}
+
+
+
+Determines the Caesar cipher key from input data. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Data} & The data to analyze. \\
+\hline
+{\em frequency\+Table} & The frequency table to use for analysis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The determined Caesar cipher key.
+\end{DoxyReturn}
+Determines the Caesar cipher key from input data.
+
+Analyzes the input data and determines the most likely Caesar cipher key by comparing letter frequencies.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+Data} & The text to analyze. \\
+\hline
+{\em frequency\+Table} & A frequency table to be used during analysis. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char The most likely Caesar cipher key. 
+\end{DoxyReturn}
+\Hypertarget{utility_8h_ac376f606ef64c0c1896b6eacb11cfe71}\label{utility_8h_ac376f606ef64c0c1896b6eacb11cfe71} 
+\index{utility.h@{utility.h}!getIndexOfCoincidence@{getIndexOfCoincidence}}
+\index{getIndexOfCoincidence@{getIndexOfCoincidence}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{getIndexOfCoincidence()}{getIndexOfCoincidence()}}
+{\footnotesize\ttfamily double get\+Index\+Of\+Coincidence (\begin{DoxyParamCaption}\item[{long long unsigned int \texorpdfstring{$\ast$}{*}}]{frequency\+Table }\end{DoxyParamCaption})}
+
+
+
+Computes the Index of Coincidence for a frequency table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frequency\+Table} & The frequency table to analyze. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Index of Coincidence.
+\end{DoxyReturn}
+Computes the Index of Coincidence for a frequency table.
+
+This metric is used to analyze the likelihood of a particular key length in cryptographic analysis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em frequency\+Table} & A table of letter frequencies. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The calculated index of coincidence. 
+\end{DoxyReturn}
+\Hypertarget{utility_8h_a49ea566d59b876f9e18054573171970b}\label{utility_8h_a49ea566d59b876f9e18054573171970b} 
+\index{utility.h@{utility.h}!getKeyDataFromFile@{getKeyDataFromFile}}
+\index{getKeyDataFromFile@{getKeyDataFromFile}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{getKeyDataFromFile()}{getKeyDataFromFile()}}
+{\footnotesize\ttfamily bool get\+Key\+Data\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Reads key data from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to read. \\
+\hline
+{\em key} & The string to store the key data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the operation succeeds, false otherwise.
+\end{DoxyReturn}
+Reads key data from a file.
+
+This function reads the contents of the specified file and stores the data in the provided key string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file containing the key. \\
+\hline
+{\em key} & The string where the key data will be stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the key data is successfully read, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{utility_8h_adb62f9ff0257f2a21ad59bdbad6e23e6}\label{utility_8h_adb62f9ff0257f2a21ad59bdbad6e23e6} 
+\index{utility.h@{utility.h}!getKeyLength@{getKeyLength}}
+\index{getKeyLength@{getKeyLength}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{getKeyLength()}{getKeyLength()}}
+{\footnotesize\ttfamily long long unsigned int get\+Key\+Length (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{raw\+Text }\end{DoxyParamCaption})}
+
+
+
+Determines the key length of the given text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Text} & The text to analyze. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The determined key length.
+\end{DoxyReturn}
+Determines the key length of the given text.
+
+Analyzes the input text and determines the most likely key length based on statistical analysis.
+
+
+\begin{DoxyParams}{Parameters}
+{\em raw\+Text} & The text to analyze. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+long long unsigned int The most likely key length, or 0 if none is found. 
+\end{DoxyReturn}
+\Hypertarget{utility_8h_a1fe65325de8473209a13f97c2e2816d9}\label{utility_8h_a1fe65325de8473209a13f97c2e2816d9} 
+\index{utility.h@{utility.h}!getTextDataFromFile@{getTextDataFromFile}}
+\index{getTextDataFromFile@{getTextDataFromFile}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{getTextDataFromFile()}{getTextDataFromFile()}}
+{\footnotesize\ttfamily bool get\+Text\+Data\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{std\+::string \&}]{text\+Data }\end{DoxyParamCaption})}
+
+
+
+Reads text data from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to read. \\
+\hline
+{\em text\+Data} & The string to store the text data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the operation succeeds, false otherwise.
+\end{DoxyReturn}
+Reads text data from a file.
+
+This function reads the contents of a file line by line and appends it to the provided string.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file containing the text data. \\
+\hline
+{\em text\+Data} & The string where the text data will be stored. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the text data is successfully read, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{utility_8h_a3c2249598165157f40a56383a66abb2b}\label{utility_8h_a3c2249598165157f40a56383a66abb2b} 
+\index{utility.h@{utility.h}!nextValidKeyIndex@{nextValidKeyIndex}}
+\index{nextValidKeyIndex@{nextValidKeyIndex}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{nextValidKeyIndex()}{nextValidKeyIndex()}}
+{\footnotesize\ttfamily long long int next\+Valid\+Key\+Index (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key,  }\item[{long long int}]{current\+Index }\end{DoxyParamCaption})}
+
+
+
+Finds the next valid key index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key string to analyze. \\
+\hline
+{\em current\+Index} & The current index to start from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The next valid key index, or -\/1 if none are found.
+\end{DoxyReturn}
+Finds the next valid key index.
+
+This function increments the index until it points to a valid lowercase alphabetical character. Returns -\/1 if no valid characters are found.
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & The key string to iterate through. \\
+\hline
+{\em current\+Index} & The current index in the key string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+long long int The next valid index, or -\/1 if none exist. 
+\end{DoxyReturn}
+\Hypertarget{utility_8h_a5210c3c5fc0ef89e29ec9fcce68bffbf}\label{utility_8h_a5210c3c5fc0ef89e29ec9fcce68bffbf} 
+\index{utility.h@{utility.h}!parceArguments@{parceArguments}}
+\index{parceArguments@{parceArguments}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{parceArguments()}{parceArguments()}}
+{\footnotesize\ttfamily bool parce\+Arguments (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{argv,  }\item[{std\+::string \&}]{mode,  }\item[{std\+::string \&}]{input\+File,  }\item[{std\+::string \&}]{output\+File,  }\item[{std\+::string \&}]{key\+File }\end{DoxyParamCaption})}
+
+
+
+Parses command-\/line arguments and extracts required values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of arguments. \\
+\hline
+{\em argv} & The array of argument strings. \\
+\hline
+{\em mode} & The mode of operation (e.\+g., "{}-\/en"{}, "{}-\/de"{}, "{}-\/br"{}). \\
+\hline
+{\em input\+File} & The input file path. \\
+\hline
+{\em output\+File} & The output file path. \\
+\hline
+{\em key\+File} & The key file path. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if arguments are parsed successfully, false otherwise.
+\end{DoxyReturn}
+Parses command-\/line arguments and extracts required values.
+
+Parses and validates command-\/line arguments for setting operation mode, input file, output file, and key file paths.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & The number of command-\/line arguments. \\
+\hline
+{\em argv} & The array of command-\/line arguments. \\
+\hline
+{\em mode} & A reference to store the chosen mode. \\
+\hline
+{\em input\+File} & A reference to store the input file path. \\
+\hline
+{\em output\+File} & A reference to store the output file path. \\
+\hline
+{\em key\+File} & A reference to store the key file path. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if arguments are successfully parsed, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{utility_8h_a0d20b69b0ad703df78459e1033d5c1d4}\label{utility_8h_a0d20b69b0ad703df78459e1033d5c1d4} 
+\index{utility.h@{utility.h}!printHelp@{printHelp}}
+\index{printHelp@{printHelp}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{printHelp()}{printHelp()}}
+{\footnotesize\ttfamily void print\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints help information to the console. 
+
+Prints help information to the console.
+
+Displays the supported flags, their purposes, and example usage. \Hypertarget{utility_8h_a3617b50fc3d71d891b8ea7028e570745}\label{utility_8h_a3617b50fc3d71d891b8ea7028e570745} 
+\index{utility.h@{utility.h}!saveToFile@{saveToFile}}
+\index{saveToFile@{saveToFile}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{saveToFile()}{saveToFile()}}
+{\footnotesize\ttfamily bool save\+To\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const std\+::string \&}]{data }\end{DoxyParamCaption})}
+
+
+
+Saves data to a file with a chosen separator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to save to. \\
+\hline
+{\em data} & The data to save. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the save operation succeeds, false otherwise.
+\end{DoxyReturn}
+Saves data to a file with a chosen separator.
+
+Writes the provided data to a file with the specified filename.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file to save the data. \\
+\hline
+{\em data} & The string data to be written to the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool True if the data is successfully saved, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{utility_8h_a0feaae993e2bdf92291dd7fa2fdc5b60}\label{utility_8h_a0feaae993e2bdf92291dd7fa2fdc5b60} 
+\index{utility.h@{utility.h}!stringToLowercase@{stringToLowercase}}
+\index{stringToLowercase@{stringToLowercase}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{stringToLowercase()}{stringToLowercase()}}
+{\footnotesize\ttfamily void string\+To\+Lowercase (\begin{DoxyParamCaption}\item[{std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+Converts every character of a string to its lowercase version. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string to convert.\\
+\hline
+\end{DoxyParams}
+Converts every character of a string to its lowercase version.
+
+This function modifies the provided string by converting all uppercase letters to their lowercase equivalents.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The string to convert to lowercase. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{utility_8h_a2bbada702a61e8f8232f3dbbef4ddd55}\label{utility_8h_a2bbada702a61e8f8232f3dbbef4ddd55} 
+\index{utility.h@{utility.h}!ASCII\_TEXT\_MARGIN@{ASCII\_TEXT\_MARGIN}}
+\index{ASCII\_TEXT\_MARGIN@{ASCII\_TEXT\_MARGIN}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{ASCII\_TEXT\_MARGIN}{ASCII\_TEXT\_MARGIN}}
+{\footnotesize\ttfamily const int ASCII\+\_\+\+TEXT\+\_\+\+MARGIN = 97}
+
+
+
+ASCII margin value for text processing. 
+
+\Hypertarget{utility_8h_a5df74acee9a0a1404825ed702c5559a6}\label{utility_8h_a5df74acee9a0a1404825ed702c5559a6} 
+\index{utility.h@{utility.h}!FREQUENCY\_TABLE@{FREQUENCY\_TABLE}}
+\index{FREQUENCY\_TABLE@{FREQUENCY\_TABLE}!utility.h@{utility.h}}
+\doxysubsubsection{\texorpdfstring{FREQUENCY\_TABLE}{FREQUENCY\_TABLE}}
+{\footnotesize\ttfamily const double FREQUENCY\+\_\+\+TABLE\mbox{[}$\,$\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ 0.08167,\ 0.01492,\ 0.02782,\ 0.04253,\ 0.02702,\ 0.02228,\ 0.02015,\ 0.06094,}
+\DoxyCodeLine{\ \ 0.06966,\ 0.00153,\ 0.00772,\ 0.04025,\ 0.02406,\ 0.06749,\ 0.07507,\ 0.01929,}
+\DoxyCodeLine{\ \ 0.00095,\ 0.05987,\ 0.06327,\ 0.09056,\ 0.02758,\ 0.00978,\ 0.02360,\ 0.00150,}
+\DoxyCodeLine{\ \ 0.01975,\ 0.00074}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Percent frequency of every letter in English text. 
+

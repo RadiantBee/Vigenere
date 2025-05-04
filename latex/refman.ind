@@ -1,0 +1,139 @@
+\begin{theindex}
+
+  \item {ASCII\_TEXT\_MARGIN}
+    \subitem {utility.h}, \hyperpage{29}
+
+  \indexspace
+
+  \item {breaker.cpp}
+    \subitem {breakFile}, \hyperpage{5}
+  \item {breaker.h}
+    \subitem {breakFile}, \hyperpage{6}
+  \item {breakFile}
+    \subitem {breaker.cpp}, \hyperpage{5}
+    \subitem {breaker.h}, \hyperpage{6}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {decryptor.cpp}, \hyperpage{8}
+    \subitem {decryptor.h}, \hyperpage{10}
+    \subitem {utility.cpp}, \hyperpage{15}
+    \subitem {utility.h}, \hyperpage{21}
+  \item {decryptor.cpp}
+    \subitem {decrypt}, \hyperpage{8}
+  \item {decryptor.h}
+    \subitem {decrypt}, \hyperpage{10}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {encryptor.cpp}, \hyperpage{11}
+    \subitem {encryptor.h}, \hyperpage{13}
+  \item {encryptor.cpp}
+    \subitem {encrypt}, \hyperpage{11}
+  \item {encryptor.h}
+    \subitem {encrypt}, \hyperpage{13}
+
+  \indexspace
+
+  \item {fillFrequencyTableFromText}
+    \subitem {utility.cpp}, \hyperpage{15}
+    \subitem {utility.h}, \hyperpage{23}
+  \item {fillRawText}
+    \subitem {utility.cpp}, \hyperpage{15}
+    \subitem {utility.h}, \hyperpage{23}
+  \item {FREQUENCY\_TABLE}
+    \subitem {utility.h}, \hyperpage{29}
+
+  \indexspace
+
+  \item {getCaesarKey}
+    \subitem {utility.cpp}, \hyperpage{16}
+    \subitem {utility.h}, \hyperpage{24}
+  \item {getIndexOfCoincidence}
+    \subitem {utility.cpp}, \hyperpage{16}
+    \subitem {utility.h}, \hyperpage{24}
+  \item {getKeyDataFromFile}
+    \subitem {utility.cpp}, \hyperpage{16}
+    \subitem {utility.h}, \hyperpage{25}
+  \item {getKeyLength}
+    \subitem {utility.cpp}, \hyperpage{17}
+    \subitem {utility.h}, \hyperpage{25}
+  \item {getTextDataFromFile}
+    \subitem {utility.cpp}, \hyperpage{17}
+    \subitem {utility.h}, \hyperpage{26}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{4}
+  \item {main.cpp}, \hyperpage{3}
+    \subitem {main}, \hyperpage{4}
+
+  \indexspace
+
+  \item {nextValidKeyIndex}
+    \subitem {utility.cpp}, \hyperpage{18}
+    \subitem {utility.h}, \hyperpage{26}
+
+  \indexspace
+
+  \item {parceArguments}
+    \subitem {utility.cpp}, \hyperpage{18}
+    \subitem {utility.h}, \hyperpage{27}
+  \item {printHelp}
+    \subitem {utility.cpp}, \hyperpage{19}
+    \subitem {utility.h}, \hyperpage{28}
+
+  \indexspace
+
+  \item {saveToFile}
+    \subitem {utility.cpp}, \hyperpage{19}
+    \subitem {utility.h}, \hyperpage{28}
+  \item {src/breaker.cpp}, \hyperpage{4}
+  \item {src/breaker.h}, \hyperpage{6, 7}
+  \item {src/decryptor.cpp}, \hyperpage{7}
+  \item {src/decryptor.h}, \hyperpage{9, 10}
+  \item {src/encryptor.cpp}, \hyperpage{11}
+  \item {src/encryptor.h}, \hyperpage{12, 13}
+  \item {src/utility.cpp}, \hyperpage{14}
+  \item {src/utility.h}, \hyperpage{20}, \hyperpage{30}
+  \item {stringToLowercase}
+    \subitem {utility.cpp}, \hyperpage{19}
+    \subitem {utility.h}, \hyperpage{29}
+
+  \indexspace
+
+  \item {utility.cpp}
+    \subitem {decrypt}, \hyperpage{15}
+    \subitem {fillFrequencyTableFromText}, \hyperpage{15}
+    \subitem {fillRawText}, \hyperpage{15}
+    \subitem {getCaesarKey}, \hyperpage{16}
+    \subitem {getIndexOfCoincidence}, \hyperpage{16}
+    \subitem {getKeyDataFromFile}, \hyperpage{16}
+    \subitem {getKeyLength}, \hyperpage{17}
+    \subitem {getTextDataFromFile}, \hyperpage{17}
+    \subitem {nextValidKeyIndex}, \hyperpage{18}
+    \subitem {parceArguments}, \hyperpage{18}
+    \subitem {printHelp}, \hyperpage{19}
+    \subitem {saveToFile}, \hyperpage{19}
+    \subitem {stringToLowercase}, \hyperpage{19}
+  \item {utility.h}
+    \subitem {ASCII\_TEXT\_MARGIN}, \hyperpage{29}
+    \subitem {decrypt}, \hyperpage{21}
+    \subitem {fillFrequencyTableFromText}, \hyperpage{23}
+    \subitem {fillRawText}, \hyperpage{23}
+    \subitem {FREQUENCY\_TABLE}, \hyperpage{29}
+    \subitem {getCaesarKey}, \hyperpage{24}
+    \subitem {getIndexOfCoincidence}, \hyperpage{24}
+    \subitem {getKeyDataFromFile}, \hyperpage{25}
+    \subitem {getKeyLength}, \hyperpage{25}
+    \subitem {getTextDataFromFile}, \hyperpage{26}
+    \subitem {nextValidKeyIndex}, \hyperpage{26}
+    \subitem {parceArguments}, \hyperpage{27}
+    \subitem {printHelp}, \hyperpage{28}
+    \subitem {saveToFile}, \hyperpage{28}
+    \subitem {stringToLowercase}, \hyperpage{29}
+
+\end{theindex}

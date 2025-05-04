@@ -1,0 +1,49 @@
+\doxysection{utility.\+h}
+\hypertarget{utility_8h_source}{}\label{utility_8h_source}\index{src/utility.h@{src/utility.h}}
+\mbox{\hyperlink{utility_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <cstring>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{utility_8h_a2bbada702a61e8f8232f3dbbef4ddd55}{ASCII\_TEXT\_MARGIN}}\ =\ 97;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{utility_8h_a5df74acee9a0a1404825ed702c5559a6}{FREQUENCY\_TABLE}}[]\ =\ \{}
+\DoxyCodeLine{00018\ \ \ 0.08167,\ 0.01492,\ 0.02782,\ 0.04253,\ 0.02702,\ 0.02228,\ 0.02015,\ 0.06094,}
+\DoxyCodeLine{00019\ \ \ 0.06966,\ 0.00153,\ 0.00772,\ 0.04025,\ 0.02406,\ 0.06749,\ 0.07507,\ 0.01929,}
+\DoxyCodeLine{00020\ \ \ 0.00095,\ 0.05987,\ 0.06327,\ 0.09056,\ 0.02758,\ 0.00978,\ 0.02360,\ 0.00150,}
+\DoxyCodeLine{00021\ \ \ 0.01975,\ 0.00074}
+\DoxyCodeLine{00022\ \};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{utility_8h_ac376f606ef64c0c1896b6eacb11cfe71}{getIndexOfCoincidence}}(\textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}*frequencyTable);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{utility_8h_a11129470a1774aecc4b783563c25f07e}{decrypt}}(std::string\&\ inputData,\ \textcolor{keyword}{const}\ std::string\&\ key);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00044\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{utility_8h_ac5a34f321f111931b3738f08364a4543}{getCaesarKey}}(std::string\&\ inputData,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}*\ frequencyTable);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{utility_8h_a327339b2aa7f30a9402401399dcb9683}{fillRawText}}(\textcolor{keyword}{const}\ std::string\&\ filename,\ std::string\&\ rawText);}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00058\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{utility_8h_af77f2c781e7d5922ddf127482f5814c7}{fillFrequencyTableFromText}}\ (\textcolor{keyword}{const}\ std::string\&\ rawText\ ,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}*\ frequencyTable);}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00065\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{utility_8h_adb62f9ff0257f2a21ad59bdbad6e23e6}{getKeyLength}}(\textcolor{keyword}{const}\ std::string\&\ rawText);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00073\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{utility_8h_a3c2249598165157f40a56383a66abb2b}{nextValidKeyIndex}}(\textcolor{keyword}{const}\ std::string\ \&key,\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{long}\ \textcolor{keywordtype}{int}\ currentIndex);}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00081\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{utility_8h_a3617b50fc3d71d891b8ea7028e570745}{saveToFile}}(\textcolor{keyword}{const}\ std::string\&\ filename,\ \textcolor{keyword}{const}\ std::string\&\ data);}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{utility_8h_a0feaae993e2bdf92291dd7fa2fdc5b60}{stringToLowercase}}(std::string\&\ str);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00095\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{utility_8h_a1fe65325de8473209a13f97c2e2816d9}{getTextDataFromFile}}(\textcolor{keyword}{const}\ std::string\&\ filename,\ std::string\&\ textData);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00103\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{utility_8h_a49ea566d59b876f9e18054573171970b}{getKeyDataFromFile}}(\textcolor{keyword}{const}\ std::string\&\ filename,\ std::string\&\ key);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00108\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{utility_8h_a0d20b69b0ad703df78459e1033d5c1d4}{printHelp}}();}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00120\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{utility_8h_a5210c3c5fc0ef89e29ec9fcce68bffbf}{parceArguments}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}**\ argv,\ std::string\&\ mode,\ std::string\&\ inputFile,\ std::string\&\ outputFile,\ std::string\&\ keyFile);}
+\DoxyCodeLine{00121\ }
+
+\end{DoxyCode}

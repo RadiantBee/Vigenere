@@ -1,0 +1,43 @@
+\doxysection{src/breaker.cpp File Reference}
+\hypertarget{breaker_8cpp}{}\label{breaker_8cpp}\index{src/breaker.cpp@{src/breaker.cpp}}
+{\ttfamily \#include "{}breaker.\+h"{}}\newline
+{\ttfamily \#include "{}utility.\+h"{}}\newline
+Include dependency graph for breaker.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{breaker_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{breaker_8cpp_aebe7721407b858951fa84fd70b9cb9b7}{break\+File}} (const std\+::string \&target\+File, const std\+::string \&output\+File)
+\begin{DoxyCompactList}\small\item\em Attempts to break the encryption of a file and write the decrypted output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{breaker_8cpp_aebe7721407b858951fa84fd70b9cb9b7}\label{breaker_8cpp_aebe7721407b858951fa84fd70b9cb9b7} 
+\index{breaker.cpp@{breaker.cpp}!breakFile@{breakFile}}
+\index{breakFile@{breakFile}!breaker.cpp@{breaker.cpp}}
+\doxysubsubsection{\texorpdfstring{breakFile()}{breakFile()}}
+{\footnotesize\ttfamily int break\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{target\+File,  }\item[{const std\+::string \&}]{output\+File }\end{DoxyParamCaption})}
+
+
+
+Attempts to break the encryption of a file and write the decrypted output. 
+
+Attempts to break the encryption of a file.
+
+This function analyzes the encrypted file, determines the likely key length, derives the encryption key, and decrypts the file. The result is saved to the output file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em target\+File} & The path to the encrypted file to be analyzed and decrypted. \\
+\hline
+{\em output\+File} & The path to the file where decrypted content will be saved. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 on success, or a non-\/zero error code on failure. 
+\end{DoxyReturn}

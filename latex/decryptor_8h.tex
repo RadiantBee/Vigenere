@@ -1,0 +1,65 @@
+\doxysection{src/decryptor.h File Reference}
+\hypertarget{decryptor_8h}{}\label{decryptor_8h}\index{src/decryptor.h@{src/decryptor.h}}
+{\ttfamily \#include "{}utility.\+h"{}}\newline
+Include dependency graph for decryptor.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{decryptor_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{decryptor_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{decryptor_8h_a86ac25fe3c7b3be56c10b7d1532aa76a}{decrypt}} (const std\+::string \&input\+File, const std\+::string \&output\+File, const std\+::string \&key\+File)
+\begin{DoxyCompactList}\small\item\em Decrypts an input file using the provided key. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{decryptor_8h_a86ac25fe3c7b3be56c10b7d1532aa76a}\label{decryptor_8h_a86ac25fe3c7b3be56c10b7d1532aa76a} 
+\index{decryptor.h@{decryptor.h}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!decryptor.h@{decryptor.h}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily int decrypt (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input\+File,  }\item[{const std\+::string \&}]{output\+File,  }\item[{const std\+::string \&}]{key\+File }\end{DoxyParamCaption})}
+
+
+
+Decrypts an input file using the provided key. 
+
+This function reads an encrypted file and decrypts its contents using the key specified in the key file. The decrypted output is saved to the specified output file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+File} & The path to the encrypted input file. \\
+\hline
+{\em output\+File} & The path to the output file where decrypted content will be saved. \\
+\hline
+{\em key\+File} & The path to the key file containing the decryption key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Returns 0 on successful decryption, or a non-\/zero error code on failure.
+\end{DoxyReturn}
+Decrypts an input file using the provided key.
+
+This function reads the encrypted data and the decryption key from the specified files, performs the decryption by shifting each character based on the key, and then writes the decrypted data to the output file.
+
+
+\begin{DoxyParams}{Parameters}
+{\em input\+File} & The path to the file containing the encrypted data. \\
+\hline
+{\em output\+File} & The path to the file where the decrypted data will be saved. \\
+\hline
+{\em key\+File} & The path to the file containing the decryption key. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 0 if the decryption was successful, or -\/1 if an error occurred during the process (e.\+g., invalid key or file reading issues). 
+\end{DoxyReturn}

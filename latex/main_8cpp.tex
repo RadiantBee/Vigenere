@@ -1,0 +1,59 @@
+\doxysection{main.\+cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include "{}src/encryptor.\+h"{}}\newline
+{\ttfamily \#include "{}src/decryptor.\+h"{}}\newline
+{\ttfamily \#include "{}src/breaker.\+h"{}}\newline
+{\ttfamily \#include "{}src/utility.\+h"{}}\newline
+Include dependency graph for main.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Entry point of the application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char \texorpdfstring{$\ast$}{*}}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Entry point of the application. 
+
+This program supports three modes of operation\+:
+\begin{DoxyItemize}
+\item Encryption\+: Encrypts the input file using a specified key.
+\item Decryption\+: Decrypts the input file using a specified key.
+\item Breaking\+: Attempts to break the encryption on the input file without a key.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of command-\/line arguments. \\
+\hline
+{\em argv} & Array of command-\/line arguments.
+\begin{DoxyItemize}
+\item Mode\+: Specify "{}-\/en"{} for encryption, "{}-\/de"{} for decryption, or "{}-\/br"{} for breaking.
+\item Input\+File\+: Path to the input file to process.
+\item Output\+File\+: Path to save the processed output.
+\item Key\+File\+: Path to the key file (required for encryption and decryption).
+\end{DoxyItemize}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Exit status of the program.
+\begin{DoxyItemize}
+\item 0\+: Success.
+\item 1\+: Invalid mode specified.
+\item -\/1\+: Error in parsing arguments or execution. 
+\end{DoxyItemize}
+\end{DoxyReturn}
