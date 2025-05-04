@@ -1,3 +1,7 @@
+## Building application:
+You can build executable file with Makefile (with g++)
+
+## How to use it?
 Encoding novel:
 ./main -en -i test/TomSawyer -o test/encodedNovel -k test/keyTom 
 
